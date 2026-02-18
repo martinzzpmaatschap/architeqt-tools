@@ -1,26 +1,36 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
+  --brand-primary: #00A693;
+  --brand-primary-hover: #008577;
+  --brand-primary-light: #33B8A9;
+  --brand-primary-bg: #E6F7F5;
+  --brand-secondary: #f59e0b;
+  --brand-secondary-hover: #d97706;
+  --gradient-header: linear-gradient(to right, #0d9488, #0f766e);
+  
+  --foreground: #111827;
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --foreground: #f9fafb;
     --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  line-height: 1.6;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
