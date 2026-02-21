@@ -60,7 +60,7 @@ export default function TimelineForm({ onCalculate, isCalculating = false }: Tim
           id="projectType"
           value={projectType}
           onChange={(e) => setProjectType(e.target.value)}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-architeqt focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-turquoise focus:border-transparent"
           required
         >
           <option value="">Selecteer een type</option>
@@ -85,7 +85,7 @@ export default function TimelineForm({ onCalculate, isCalculating = false }: Tim
           placeholder="Bijv. 150"
           min="1"
           step="0.1"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-architeqt focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-turquoise focus:border-transparent"
           required
         />
       </div>
@@ -106,8 +106,8 @@ export default function TimelineForm({ onCalculate, isCalculating = false }: Tim
               onClick={() => setComplexity(opt.value as typeof complexity)}
               className={`p-4 rounded-lg border-2 text-center transition-all ${
                 complexity === opt.value
-                  ? 'border-architeqt bg-architeqt/5 text-architeqt font-semibold'
-                  : 'border-gray-300 hover:border-architeqt/50'
+                  ? 'border-primary-turquoise bg-primary-turquoise/5 text-primary-turquoise font-semibold'
+                  : 'border-gray-300 text-gray-700 hover:border-primary-turquoise/50'
               }`}
             >
               <div className="font-medium text-sm">{opt.label}</div>
@@ -127,8 +127,8 @@ export default function TimelineForm({ onCalculate, isCalculating = false }: Tim
             onClick={() => setPermitRequired(true)}
             className={`flex-1 p-4 rounded-lg border-2 transition-all ${
               permitRequired
-                ? 'border-architeqt bg-architeqt/5 text-architeqt font-semibold'
-                : 'border-gray-300 hover:border-architeqt/50'
+                ? 'border-primary-turquoise bg-primary-turquoise/5 text-primary-turquoise font-semibold'
+                : 'border-gray-300 text-gray-700 hover:border-primary-turquoise/50'
             }`}
           >
             Ja
@@ -138,8 +138,8 @@ export default function TimelineForm({ onCalculate, isCalculating = false }: Tim
             onClick={() => setPermitRequired(false)}
             className={`flex-1 p-4 rounded-lg border-2 transition-all ${
               !permitRequired
-                ? 'border-architeqt bg-architeqt/5 text-architeqt font-semibold'
-                : 'border-gray-300 hover:border-architeqt/50'
+                ? 'border-primary-turquoise bg-primary-turquoise/5 text-primary-turquoise font-semibold'
+                : 'border-gray-300 text-gray-700 hover:border-primary-turquoise/50'
             }`}
           >
             Nee
@@ -165,8 +165,8 @@ export default function TimelineForm({ onCalculate, isCalculating = false }: Tim
               onClick={() => setStartSeason(opt.value as typeof startSeason)}
               className={`p-4 rounded-lg border-2 text-center transition-all ${
                 startSeason === opt.value
-                  ? 'border-architeqt bg-architeqt/5 text-architeqt font-semibold'
-                  : 'border-gray-300 hover:border-architeqt/50'
+                  ? 'border-primary-turquoise bg-primary-turquoise/5 text-primary-turquoise font-semibold'
+                  : 'border-gray-300 text-gray-700 hover:border-primary-turquoise/50'
               }`}
             >
               <div className="font-medium mb-1">{opt.label}</div>
@@ -180,7 +180,7 @@ export default function TimelineForm({ onCalculate, isCalculating = false }: Tim
       <button
         type="submit"
         disabled={isCalculating}
-        className="w-full bg-architeqt text-white py-4 rounded-lg font-semibold hover:bg-architeqt/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-primary-turquoise text-white py-4 rounded-lg font-semibold hover:bg-primary-turquoise/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isCalculating ? 'Berekenen...' : 'Bereken Timeline'}
       </button>

@@ -19,7 +19,7 @@ export default function ArchiteqtCTA() {
             href={BRAND.mainSite}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-architeqt px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white text-primary-turquoise px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             Ontdek {BRAND.name}
           </a>
@@ -27,7 +27,7 @@ export default function ArchiteqtCTA() {
             href={BRAND.signupUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-architeqt transition-colors"
+            className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-turquoise transition-colors"
           >
             Start 14 dagen gratis
           </a>

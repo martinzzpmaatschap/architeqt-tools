@@ -11,7 +11,7 @@ export default function TimelineResults({ result }: TimelineResultsProps) {
   return (
     <div className="space-y-6">
       {/* Total Duration - Prominent */}
-      <div className="bg-architeqt text-white rounded-xl p-8 text-center">
+      <div className="bg-primary-turquoise text-white rounded-xl p-8 text-center">
         <div className="text-sm font-medium uppercase tracking-wide opacity-90 mb-2">
           Totale Projectduur
         </div>

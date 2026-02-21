@@ -143,7 +143,7 @@ export default function TableDetector({ file, onTablesDetected, onError }: Table
         {/* Progress Bar */}
         <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
           <div
-            className="bg-architeqt h-full transition-all duration-300 ease-out"
+            className="bg-primary-turquoise h-full transition-all duration-300 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>

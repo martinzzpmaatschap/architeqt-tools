@@ -39,7 +39,7 @@ export default function ProjectPlannerPage() {
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-architeqt hover:text-architeqt/80 transition-colors">
+            <Link href="/" className="text-2xl font-bold text-primary-turquoise hover:text-primary-turquoise/80 transition-colors">
               ← ArchiteQt Tools
             </Link>
           </div>
@@ -133,7 +133,7 @@ export default function ProjectPlannerPage() {
               href="https://architeqt.tech"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-architeqt hover:underline"
+              className="text-primary-turquoise hover:underline"
             >
               architeqt.tech
             </a>

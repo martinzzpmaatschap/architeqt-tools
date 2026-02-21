@@ -11,7 +11,7 @@ export default function BudgetResults({ result }: BudgetResultsProps) {
   return (
     <div className="space-y-6">
       {/* Total - Prominent */}
-      <div className="bg-architeqt text-white rounded-xl p-8 text-center">
+      <div className="bg-primary-turquoise text-white rounded-xl p-8 text-center">
         <div className="text-sm font-medium uppercase tracking-wide opacity-90 mb-2">
           Totaal Budget (incl. BTW)
         </div>
@@ -48,9 +48,9 @@ export default function BudgetResults({ result }: BudgetResultsProps) {
           </div>
 
           {/* Totaal */}
-          <div className="px-6 py-4 flex justify-between items-center bg-architeqt/5">
-            <div className="text-architeqt font-bold text-lg">Totaal (incl. BTW)</div>
-            <div className="text-architeqt font-bold text-xl">{formatEuro(result.totaal)}</div>
+          <div className="px-6 py-4 flex justify-between items-center bg-primary-turquoise/5">
+            <div className="text-primary-turquoise font-bold text-lg">Totaal (incl. BTW)</div>
+            <div className="text-primary-turquoise font-bold text-xl">{formatEuro(result.totaal)}</div>
           </div>
         </div>
       </div>

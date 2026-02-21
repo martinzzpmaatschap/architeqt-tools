@@ -84,8 +84,8 @@ export default function PdfUploader({ onFileSelect }: PdfUploaderProps) {
         className={`
           border-2 border-dashed rounded-xl p-12 text-center transition-all cursor-pointer
           ${isDragging 
-            ? 'border-architeqt bg-architeqt/5 scale-[1.02]' 
-            : 'border-gray-300 hover:border-architeqt hover:bg-gray-50'
+            ? 'border-primary-turquoise bg-primary-turquoise/5 scale-[1.02]' 
+            : 'border-gray-300 hover:border-primary-turquoise hover:bg-gray-50'
           }
         `}
         onClick={() => document.getElementById('file-input')?.click()}

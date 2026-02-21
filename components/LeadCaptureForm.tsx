@@ -74,13 +74,13 @@ export default function LeadCaptureForm({ toolName }: LeadCaptureFormProps) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="jouw@email.nl"
           required
-          className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-architeqt focus:border-transparent"
+          className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-turquoise focus:border-transparent"
           disabled={isSubmitting}
         />
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-architeqt text-white px-6 py-3 rounded-lg font-semibold hover:bg-architeqt/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-primary-turquoise text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-turquoise/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? 'Verzenden...' : 'Verstuur'}
         </button>

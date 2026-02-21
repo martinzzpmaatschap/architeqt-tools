@@ -6,24 +6,24 @@ export default function HomePage() {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-teal-600 to-teal-700 text-white py-20">
+      <section className="bg-white text-gray-900 py-12 md:bg-gradient-to-r md:from-teal-600 md:to-teal-700 md:text-white md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Gratis Tools voor Architecten
           </h1>
-          <p className="text-xl md:text-2xl text-teal-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 md:text-teal-100 mb-8 max-w-3xl mx-auto">
             Budget calculator, project planner en PDF converter. Professioneel, snel en 100% gratis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="#tools"
-              className="bg-white text-teal-700 hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-primary-turquoise text-white hover:bg-primary-turquoise-hover md:bg-white md:text-teal-700 md:hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Bekijk tools
             </Link>
             <Link
               href={BRAND.signupUrl}
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-teal-700 font-semibold px-8 py-4 rounded-lg transition-all duration-200"
+              className="bg-transparent border-2 border-gray-300 text-gray-700 hover:bg-gray-50 md:border-white md:text-white md:hover:bg-white md:hover:text-teal-700 font-semibold px-8 py-4 rounded-lg transition-all duration-200"
             >
               Maak gratis account
             </Link>

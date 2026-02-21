@@ -267,13 +267,13 @@ export default function TimelineExport({ result, input }: TimelineExportProps) {
     <div className="flex flex-col sm:flex-row gap-3">
       <button
         onClick={handleDownloadPDF}
-        className="flex-1 bg-white border-2 border-architeqt text-architeqt py-3 px-6 rounded-lg font-semibold hover:bg-architeqt hover:text-white transition-colors"
+        className="flex-1 bg-white border-2 border-primary-turquoise text-primary-turquoise py-3 px-6 rounded-lg font-semibold hover:bg-primary-turquoise hover:text-white transition-colors"
       >
         📄 Download PDF
       </button>
       <button
         onClick={handleDownloadExcel}
-        className="flex-1 bg-white border-2 border-architeqt text-architeqt py-3 px-6 rounded-lg font-semibold hover:bg-architeqt hover:text-white transition-colors"
+        className="flex-1 bg-white border-2 border-primary-turquoise text-primary-turquoise py-3 px-6 rounded-lg font-semibold hover:bg-primary-turquoise hover:text-white transition-colors"
       >
         📊 Download Excel
       </button>

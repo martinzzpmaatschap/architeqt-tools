@@ -30,7 +30,7 @@ export default function TablePreview({ tables, onUpdate }: TablePreviewProps) {
               onClick={() => setSelectedTable(index)}
               className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                 selectedTable === index
-                  ? 'bg-architeqt text-white'
+                  ? 'bg-primary-turquoise text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -57,7 +57,7 @@ export default function TablePreview({ tables, onUpdate }: TablePreviewProps) {
           <table className="w-full">
             {/* Headers */}
             {tables[selectedTable].headers && (
-              <thead className="bg-architeqt/10">
+              <thead className="bg-primary-turquoise/10">
                 <tr>
                   {tables[selectedTable].headers!.map((header, colIndex) => (
                     <th
@@ -70,7 +70,7 @@ export default function TablePreview({ tables, onUpdate }: TablePreviewProps) {
                         onChange={(e) =>
                           handleCellEdit(selectedTable, 0, colIndex, e.target.value)
                         }
-                        className="w-full bg-transparent border-none outline-none focus:ring-2 focus:ring-architeqt rounded px-2 py-1"
+                        className="w-full bg-transparent border-none outline-none focus:ring-2 focus:ring-primary-turquoise rounded px-2 py-1"
                       />
                     </th>
                   ))}
@@ -101,7 +101,7 @@ export default function TablePreview({ tables, onUpdate }: TablePreviewProps) {
                               e.target.value
                             )
                           }
-                          className="w-full bg-transparent border-none outline-none focus:ring-2 focus:ring-architeqt rounded px-2 py-1"
+                          className="w-full bg-transparent border-none outline-none focus:ring-2 focus:ring-primary-turquoise rounded px-2 py-1"
                         />
                       </td>
                     ))}

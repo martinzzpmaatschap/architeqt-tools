@@ -62,13 +62,13 @@ export default function ConvertExport({ tables, filename }: ConvertExportProps) 
       <div className="flex flex-col sm:flex-row gap-3">
         <button
           onClick={handleDownloadExcel}
-          className="flex-1 bg-architeqt text-white py-3 px-6 rounded-lg font-semibold hover:bg-architeqt/90 transition-colors"
+          className="flex-1 bg-primary-turquoise text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-turquoise/90 transition-colors"
         >
           📊 Download als Excel (.xlsx)
         </button>
         <button
           onClick={handleDownloadCSV}
-          className="flex-1 bg-white border-2 border-architeqt text-architeqt py-3 px-6 rounded-lg font-semibold hover:bg-architeqt hover:text-white transition-colors"
+          className="flex-1 bg-white border-2 border-primary-turquoise text-primary-turquoise py-3 px-6 rounded-lg font-semibold hover:bg-primary-turquoise hover:text-white transition-colors"
         >
           📄 Download als CSV
         </button>

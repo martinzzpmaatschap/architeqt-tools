@@ -27,7 +27,7 @@ export default function SaveUpsellBanner({
             href={BRAND.toolsSignupUrl(toolName)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-architeqt text-white px-6 py-2 rounded-lg font-semibold hover:bg-architeqt/90 transition-colors"
+            className="inline-block bg-primary-turquoise text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-turquoise/90 transition-colors"
           >
             Opslaan in account (gratis)
           </a>
