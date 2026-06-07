@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { BRAND } from '@/lib/constants'
 import LeadCaptureForm from './LeadCaptureForm'
 
@@ -10,7 +9,8 @@ interface SaveUpsellBannerProps {
 }
 
 export default function SaveUpsellBanner({ toolName, onDownload }: SaveUpsellBannerProps) {
-  const [showLeadCapture, setShowLeadCapture] = useState(false)
+  // showLeadCapture reserved for future use (feature flag)
+  const showLeadCapture = false
 
   const handleSaveClick = () => {
     // Direct naar signup (met tool tracking)

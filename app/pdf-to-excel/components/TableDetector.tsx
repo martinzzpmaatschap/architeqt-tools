@@ -25,6 +25,8 @@ export default function TableDetector({ file, onTablesDetected, onError }: Table
 
   useEffect(() => {
     processPdf();
+    // processPdf intentionally excluded from deps — re-run only on file change
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [file]);
 
   const processPdf = async () => {
@@ -48,9 +50,10 @@ export default function TableDetector({ file, onTablesDetected, onError }: Table
         const textContent = await page.getTextContent();
 
         // Extract text items
-        const textItems = textContent.items
-          .filter((item: any) => 'str' in item)
-          .map((item: any) => ({
+        // pdfjs types include TextMarkedContent which has no str; cast via unknown to work around
+        const textItems = (textContent.items as unknown as Array<{ str: string; transform: number[]; width: number; height: number }>)
+          .filter((item) => typeof item.str === 'string' && item.str.trim().length > 0)
+          .map((item) => ({
             text: item.str.trim(),
             x: item.transform[4],
             y: item.transform[5],
@@ -91,14 +94,16 @@ export default function TableDetector({ file, onTablesDetected, onError }: Table
     }
   };
 
-  const groupIntoRows = (items: any[]): string[][] => {
+  interface TextItem { text: string; x: number; y: number; width: number; height: number; }
+
+  const groupIntoRows = (items: TextItem[]): string[][] => {
     if (items.length === 0) return [];
 
     // Sort by Y coordinate (top to bottom)
     items.sort((a, b) => b.y - a.y);
 
     const rows: string[][] = [];
-    let currentRow: any[] = [];
+    let currentRow: TextItem[] = [];
     let lastY = items[0].y;
     const yThreshold = 5; // Pixels threshold for same row
 

@@ -35,7 +35,7 @@ export default function LeadCaptureForm({ toolName }: LeadCaptureFormProps) {
 
       setIsSubmitted(true);
       setEmail('');
-    } catch (err) {
+    } catch {
       setError('Er ging iets mis. Probeer het later opnieuw.');
     } finally {
       setIsSubmitting(false);

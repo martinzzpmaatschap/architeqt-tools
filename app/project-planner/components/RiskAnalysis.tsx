@@ -13,7 +13,7 @@ export default function RiskAnalysis({ risks, recommendations }: RiskAnalysisPro
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
           <h4 className="font-semibold text-yellow-900 mb-4 flex items-center gap-2">
             <span className="text-xl">⚠️</span>
-            Risico's & Waarschuwingen
+            Risico&apos;s & Waarschuwingen
           </h4>
           <ul className="space-y-2">
             {risks.map((risk, index) => (
